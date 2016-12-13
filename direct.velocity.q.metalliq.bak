@@ -1,0 +1,30 @@
+{
+ "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Velocity ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.BlazeRepo",
+ "plugin"       : "plugin.video.velocity",
+ "priority"     : 200,
+ "id"           : "direct.velocity.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.velocity/?media=movies&mode=findsource&movie_title={title}&name={name}&thumb={info[poster]}&trakt_id={trakt}&url",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.velocity/?media=shows&mode=findsource&movie_title={clearname}%20({year})&name=S{season}E{episode}%20%20{title}&thumb=&trakt_id={trakt}&url",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}
