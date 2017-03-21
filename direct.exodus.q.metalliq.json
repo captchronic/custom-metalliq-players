@@ -1,9 +1,9 @@
 {
- "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Exodus [+] ([COLOR FF0084FF]Q[/COLOR])",
+ "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Exodus ([COLOR FF0084FF]Q[/COLOR]) [[COLOR FFFB122F]M[/COLOR][COLOR FF018E0E]L[/COLOR][COLOR FFFB122F]C[/COLOR]]",
  "repository"   : "repository.exodus",
  "plugin"       : "plugin.video.exodus",
  "priority"     : 200,
- "id"           : "direct.exodus+.q",
+ "id"           : "direct.exodus.q",
  "filters"      : {},
  "postprocess"  : "",
  "movies"       : [
