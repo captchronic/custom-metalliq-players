@@ -1,0 +1,181 @@
+{
+ "name"         : "Explore [COLOR FF0084FF]-[/COLOR] ExtendedInfo's YouTube NL ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.q",
+ "plugin"       : "script.extendedinfo",
+ "priority"     : 700,
+ "id"           : "explore.extendedinfo_youtube_nl.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={name}",
+    "steps"     : [
+     "{title}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={title}",
+    "steps"     : [
+     "{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+{absolute_number}",
+    "steps"     : [
+     ".*{clearname}.*{absolute_number}.*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+{absolute_number}",
+    "steps"     : [
+     ".*{absolute_number}.*{title}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+{season}x{episode}",
+    "steps"     : [
+     "{clearname}.*{season}x{episode}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+s{season}e{episode}",
+    "steps"     : [
+     "{clearname}.*s{season}e{episode}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+{season}{episode:02d}",
+    "steps"     : [
+     "{clearname}.*{season}{episode:02d}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}+{absolute_number}",
+    "steps"     : [
+     ".*{absolute_number}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={clearname}",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [
+  [
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={artist}+{album}+{track}",
+    "steps"     : [
+     ".*{artist}.*{album}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={artist}+{track}",
+    "steps"     : [
+     ".*{artist}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={track}",
+    "steps"     : [
+     ".*{track}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music"        : [
+  [
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={artist}+{album}+{track}",
+    "steps"     : [
+     ".*{artist}.*{album}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={artist}+{track}",
+    "steps"     : [
+     ".*{artist}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={track}",
+    "steps"     : [
+     ".*{track}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : [
+  [
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={name}",
+    "steps"     : [
+     "{name}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={name}",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={name}",
+    "steps"     : [
+     "{basename}.({extension}|{extension|number_to_text()}|{extension|text_to_number()})"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "language"  : "nl",
+    "link"      : "plugin://script.extendedinfo/?info=youtubesearch&id={name}",
+    "steps"     : [
+     ".*{basename}.({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}
