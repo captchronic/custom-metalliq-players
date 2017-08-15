@@ -1,0 +1,30 @@
+{
+ "name"         : "Zonal [COLOR FF0084FF]-[/COLOR] Exodus ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.exodus",
+ "plugin"       : "plugin.video.exodus",
+ "priority"     : 700,
+ "id"           : "zonal.exodus.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=moviePage&url=http%3A%2F%2Fapi-v2launch.trakt.tv%2Fsearch%3Ftype%3Dmovie%26limit%3D20%26page%3D1%26query%3D{title_+}&kids=0",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=episodes&imdb={imdb}&season={season}&tvdb={id}&tvshowtitle={clearname}&year={year}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}

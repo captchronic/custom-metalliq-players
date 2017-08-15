@@ -1,0 +1,52 @@
+{
+ "name"         : "Search [COLOR FF0084FF]-[/COLOR] Superchillin ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.kaosbox2",
+ "plugin"       : "plugin.video.superchillin",
+ "priority"     : 900,
+ "id"           : "direct.superchillin.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.superchillin/?mode=5&name=Search&url=search",
+    "steps"     : [
+     "@keyboard:{title}",
+     "{title}.*{year}."
+     ],
+    "action"    : "RUN"
+   },
+   {
+    "link"      : "plugin://plugin.video.superchillin/?mode=5&name=Search&url=search",
+    "steps"     : [
+     "@keyboard:{title}",
+     "{title}"
+     ],
+    "action"    : "RUN"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.superchillin/?mode=9&name=TV+Shows&url=TV",
+    "steps"     : [
+     "{clearname}",
+     "{season}x{episode:02d}.*($$.*$$).free.($$.*$$)"
+     ],
+    "action"    : "RUN"
+   },
+   {
+    "link"      : "plugin://plugin.video.superchillin/?mode=9&name=TV+Shows&url=TV",
+    "steps"     : [
+     "{clearname}.*",
+     "{season}x{episode:02d}.*($$.*$$).free.($$.*$$)"
+     ],
+    "action"    : "RUN"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}
