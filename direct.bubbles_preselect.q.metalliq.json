@@ -1,0 +1,30 @@
+{
+ "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Bubbles PreSelect ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.bubbles",
+ "plugin"       : "plugin.video.bubbles",
+ "priority"     : 200,
+ "id"           : "direct.bubbles_preselect.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.bubbles/?action=play&title={title_+}&year={year}&imdb={id}&tmdb={tmdb}&type=movie&preset=1&select=2",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.bubbles/?action=play&title={title_+}&year={year}&imdb={imdb}&tvdb={id}&season={season}&episode={episode}&tvshowtitle={clearname_+}&premiered={firstaired}&preset=1&select=2",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}
