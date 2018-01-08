@@ -1,0 +1,47 @@
+{
+ "name"         : "Search [COLOR FF0084FF]-[/COLOR] Spotify ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.blamo",
+ "plugin"       : "plugin.audio.spotify",
+ "priority"     : 900,
+ "id"           : "search.spotify.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "musicvideos"  : [],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.spotify/?action=search",
+    "steps"     : [
+     "@keyboard:{artist}",
+     "@any",
+     "{artist}",
+     "{album}",
+     "{track}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.audio.spotify/?action=search",
+    "steps"     : [
+     "@keyboard:{album}",
+     "@any",
+     "{album}",
+     "{track}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.audio.spotify/?action=search",
+    "steps"     : [
+     "@keyboard:{track}",
+     "@any",
+     "{track}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}
